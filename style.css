@@ -118,8 +118,9 @@
   color: white;
 }
 .body{
-  background-image: url("https://raw.githubusercontent.com/Kalvium-Program/amazon-clone-boilerplate/main/assets/background%20picture.png");
+  background-image: url("https://raw.githubusercontent.com/Kalvium-Program/amazon-clone-boilerplate/main/assets/background%20picture.png"); 
   background-size: cover;
+  /* background-color: antiquewhite; */
   height: 100vh;
   width: 100%;
   display: inline-flex;
@@ -163,7 +164,7 @@
 }
 .body .fourthpic{
   width: 21.00%;
-  height: 41.875%;
+  height: 44.875%;
   margin-top:  23.125em; 
 }
 .body .fourthpic button{
@@ -203,20 +204,120 @@
 .tot img{
   cursor: pointer;
 }
-
-@media all and(max-width:1000px){
+.divsheading{
+  font-size: 1.0em;
+  font-weight: bold;
+}
+.anchortags{
+  font-size: 1em;
+}
+@media all and (max-width:700px){
+  .body{
+    background-image: none;
+    background-color: #ffc87b;
+    height: max-content;
+  }
+  .second-nav{
+    height: 40px;
+    background-color: #ffbc20;
+  }
+  .second-nav img{
+    display: none;
+  }
+  .anchortags{
+    display: none;
+  }
+  .anchortags{
+    font-size: 10px;
+  }
+  .second-div{
+    display: none;
+  }
+  .first-nav{
+    height: 60px;
+    background-color: rgb(35, 44, 54);
+  }
+  .third-div{
+    margin-left: 3%;
+    height: 60px;
+  }
+  .fourth-div{
+    display: none;
+  }
+  .fifth-div{
+    display: none;
+  }
+  .sixth-div{
+    display: none;
+  }
   .tot{
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .tot .column{
-    display:  none;
-  }
   .first-div{
-    margin-left: 0px;
+    margin-left: 10px;
+    display: none;
+  }
+  .tot{
+    display: grid;
+    grid-template-columns: repeat(2,8.125rem);
+    margin-top: 30px;
+    gap: 9px;
   }
   .second-div{
     margin-left: 3px;
+  }
+  .third-div{
+    height: 40px;
+    width: 360px;
+  }
+  .flag{
+    display: none;
+  }
+  .third-div .search{
+    height: 40px;
+    background-color: #ffffff;
+  }
+  .third-div input{
+    height: 27px;
+    font-size: small;
+    padding: 0px;
+  }
+  .third-div .all{
+    border-right: 30px;
+  }
+  .body{
+    display: grid;
+    justify-content: center;
+  }
+  .body .firstpic{
+    width: 75%;
+    margin-left: 50px;
+    margin-top: 80px;
+    height: fit-content;
+    /* background-color: #FED813; */
+  }
+  .body .secondpic{
+    width: 75%;
+    height: fit-content;
+    /* background-color: #FED813; */
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  .body .thirdpic{
+    width: 75%;
+    margin-left: 50px;
+    height: fit-content;
+    /* background-color: #FED813; */
+    margin-top: 30px;
+
+  }
+  .body .fourthpic{
+    width: 75%;
+    margin-top: 30px;
+    height: fit-content;
+    margin-left: 50px;
+    /* background-color: #FED813; */
   }
 }
