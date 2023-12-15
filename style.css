@@ -19,6 +19,7 @@
   width: 15.625%;
   margin-left: 30px;
   font-size: small;
+  overflow-x: auto;
 }
 .second-div p{
   color: gray;
